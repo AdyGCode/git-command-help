@@ -84,5 +84,49 @@ git add .
    git checkout Branch-Name
 ```
 
+### Merging changes from one branch into main
+```bash
+   git checkout main
+   git status
+   git merge Branch-Name-To-Bring-In
+   git status
+   git log
+```
+
+## Remote Repositories
+Before you can use a remote repository (repo) you need to have created it on the remote system.
+
+We will use GitHub for this purpose, other remote repositories that use Git are also valid.
+
+## Create a Remote Repo
+1) Head to https://github.com
+2) If you do not have an account, create a github account
+3) Create a new repo making sure that:
+   - Do not add a README.md
+   - Do not add a License
+   - Do not add a .gitignore
+   - In other words: Do not add anything to the **blank** repo.
+
+### Connecting a Remote Repo
+```bash
+git remote add origin https://github.com/ACCOUNT_NAME/REPO_NAME.git
+```
+origin = alias for the remote
+
+### Pushing commits to the remote
+```bash
+git push -u origin main
+```
 
 
+
+
+
+## Asides!
+
+### Markdown Table
+
+| Heading 1 | Heading 2 | Another Heading |
+|---|---|---|
+|Content for Cell| Another bit | Last bit |
+|Another row... | | |
