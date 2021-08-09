@@ -73,3 +73,16 @@ git add .
 ```bash
    git log
 ```
+
+### Create a Branch
+```bash
+   git branch Branch-Name
+```
+
+### Change Branches
+```bash
+   git checkout Branch-Name
+```
+
+
+
